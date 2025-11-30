@@ -279,7 +279,7 @@
         <a class="link-btn"
            href="https://github.com/xxue752-nz/Menta.git"
            target="_blank" rel="noopener noreferrer">
-          <span class="link-icon">🐙</span>
+          <span class="link-icon"></span>
           <span>GitHub</span>
         </a>
 
@@ -287,7 +287,7 @@
         <a class="link-btn"
            href="https://huggingface.co/mHealthAI/Menta"
            target="_blank" rel="noopener noreferrer">
-          <span class="link-icon">🤗</span>
+          <span class="link-icon"></span>
           <span>Hugging&nbsp;Face</span>
         </a>
       </div>
@@ -301,12 +301,18 @@
       <section id="abstract" class="section">
         <h2>Abstract</h2>
         <p>
-          Menta is a small language model for digital mental health prediction from social media text.
-          It targets early detection of stress, depression, and suicidality while remaining lightweight
-          enough to run entirely on consumer devices. By jointly training multiple classification tasks
-          on expert-annotated Reddit datasets and optimizing a balanced accuracy–aware loss,
-          Menta achieves competitive or superior performance compared with larger mental-health–tuned
-          LLMs, and can be deployed for real-time, privacy-preserving on-device screening.
+          Mental health conditions affect hundreds of millions globally, yet early detection remains limited. While large language models
+(LLMs) have shown promise in mental health applications, their size and computational demands hinder practical deployment. Small 
+language models (SLMs) offer a lightweight alternative, but their use for social media–based mental health prediction remains largely
+underexplored. In this study, we introduce Menta, the first optimized SLM fine-tuned specifically for multi-task mental health prediction
+from social media data. Menta is jointly trained across six classification tasks using a LoRA-based framework, a cross-dataset strategy,
+and a balanced accuracy–oriented loss. Evaluated against nine state-of-the-art SLM baselines, Menta achieves an average improvement
+of 15.2% across tasks covering depression, stress, and suicidality compared with the best-performing non–fine-tuned SLMs. It also
+achieves higher accuracy on depression and stress classification tasks compared to 13B-parameter LLMs, while being approximately
+3.25× smaller. Moreover, we demonstrate real-time, on-device deployment of Menta on an iPhone 15 Pro Max, requiring only
+approximately 3GB RAM. Supported by a comprehensive benchmark against existing SLMs and LLMs, Menta highlights the potential
+for scalable, privacy-preserving mental health monitoring.
+          <img src="3.png" alt="main" />
         </p>
       </section>
 
@@ -449,8 +455,7 @@
         </table>
 
         <p class="highlight">
-          TODO：这里可以补充每个数据集的样本数量、标签分布、以及原始论文或数据集主页的链接
-          （用 Markdown/HTML 链接即可）。
+          <img src="4.png" alt="dataset" />
         </p>
       </section>
 
